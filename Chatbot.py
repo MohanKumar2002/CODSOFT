@@ -1,22 +1,22 @@
 def chatbot_response(user_input):
     user_input = user_input.lower()  
-    greetings = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']
-    farewell = ['bye', 'goodbye', 'see you later', 'see ya']
-    gratitude = ['thank you', 'thanks', 'thanks a lot']
-    inquiries = ['how are you?', 'what are you doing?', 'what can you do?']
-    reference = ['who created you?' ]
-    help_keywords = ['help', 'assist', 'support']
-    if user_input in greetings:
+    a = ['hello', 'hi', 'hey', 'good morning', 'good afternoon', 'good evening']
+    b = ['bye', 'goodbye', 'see you later', 'see ya']
+    c = ['thank you', 'thanks', 'thanks a lot']
+    d = ['who created you?' ]
+    e = ['how are you?', 'what are you doing?', 'what can you do?']
+    f = ['help', 'assist', 'support']
+    if user_input in a:
         return "Hello there! How can I assist you?"
-    elif user_input in farewell:
+    elif user_input in b:
         return "Goodbye! Have a great day!"
-    elif user_input in gratitude:
+    elif user_input in c:
         return "You're welcome!"
-    elif user_input in reference:
+    elif user_input in d:
         return "I was created by Mohan."
-    elif any(inquiry in user_input for inquiry in inquiries):
+    elif any(inquiry in user_input for inquiry in e):
         return "I am just a simple chatbot created to assist you."
-    elif any(keyword in user_input for keyword in help_keywords):
+    elif any(keyword in user_input for keyword in f):
         return "Of course! How can I help you today?"
     else:
         return "I'm sorry, I didn't understand that. Can you please rephrase or ask something else?"
